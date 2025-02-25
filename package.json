@@ -1,0 +1,40 @@
+{
+  "name": "super-app",
+  "version": "1.0.0",
+  "description": "A cross-platform super-app focusing on productivity through learning, work, sports, nutrition, and mental health.",
+  "main": "src/App.tsx",
+  "scripts": {
+    "start": "react-native start",
+    "build": "react-native build",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.64.2",
+    "react-navigation": "^4.4.4",
+    "axios": "^0.21.1",
+    "redux": "^4.1.0",
+    "react-redux": "^7.2.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/super-app.git"
+  },
+  "keywords": [
+    "productivity",
+    "learning",
+    "work",
+    "sports",
+    "nutrition",
+    "mental health",
+    "gamification"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

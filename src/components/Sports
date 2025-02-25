@@ -1,0 +1,31 @@
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const Sports = () => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.title}>Sports Module</Text>
+            <Text style={styles.description}>Track your fitness activities and progress.</Text>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f0f0f0',
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
+    description: {
+        fontSize: 16,
+        textAlign: 'center',
+        margin: 10,
+    },
+});
+
+export default Sports;

@@ -1,0 +1,68 @@
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native';
+
+const WorkModule = () => {
+    const [task, setTask] = useState('');
+    const [tasks, setTasks] = useState([]);
+
+    const addTask = () => {
+        if (task.trim()) {
+            setTasks([...tasks, { id: Date.now().toString(), title: task }]);
+            setTask('');
+        }
+    };
+
+    const renderTask = ({ item }) => (
+        <View style={styles.taskItem}>
+            <Text>{item.title}</Text>
+        </View>
+    );
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.header}>Work Module</Text>
+            <TextInput
+                style={styles.input}
+                placeholder="Add a new task"
+                value={task}
+                onChangeText={setTask}
+            />
+            <Button title="Add Task" onPress={addTask} />
+            <FlatList
+                data={tasks}
+                renderItem={renderTask}
+                keyExtractor={item => item.id}
+                style={styles.taskList}
+            />
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 20,
+        backgroundColor: '#fff',
+    },
+    header: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: '#ccc',
+        padding: 10,
+        marginBottom: 10,
+    },
+    taskList: {
+        marginTop: 20,
+    },
+    taskItem: {
+        padding: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ccc',
+    },
+});
+
+export default WorkModule;
