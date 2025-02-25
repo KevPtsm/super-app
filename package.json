@@ -10,21 +10,29 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-native": "0.64.2",
-    "react-navigation": "^4.4.4",
-    "axios": "^0.21.1",
-    "redux": "^4.1.0",
-    "react-redux": "^7.2.5"
+    "axios": "^1.7.9",
+    "react": "17.0.1",
+    "react-native": "0.64.3",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "@react-native-community/masked-view": "^0.1.10",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
-    "typescript": "^4.3.5",
     "eslint": "^7.32.0",
-    "jest": "^27.0.6"
+    "jest": "^27.4.5",
+    "typescript": "^4.5.4",
+    "@types/react": "^17.0.37",
+    "@types/react-native": "^0.66.13",
+    "@types/react-redux": "^7.1.20",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/super-app.git"
+    "url": "https://github.com/KevPtsm/super-app.git/"
   },
   "keywords": [
     "productivity",
@@ -35,6 +43,6 @@
     "mental health",
     "gamification"
   ],
-  "author": "Your Name",
+  "author": "Kevin Pietschmann",
   "license": "MIT"
 }

@@ -10,17 +10,17 @@ import MissionsScreen from '../screens/MissionsScreen';
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
-                <Stack.Screen name="Friends" component={FriendsScreen} />
-                <Stack.Screen name="Streaks" component={StreaksScreen} />
-                <Stack.Screen name="Missions" component={MissionsScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
+        <Stack.Screen name="Friends" component={FriendsScreen} />
+        <Stack.Screen name="Streaks" component={StreaksScreen} />
+        <Stack.Screen name="Missions" component={MissionsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default AppNavigator;
